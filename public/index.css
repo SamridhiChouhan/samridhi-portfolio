@@ -133,8 +133,7 @@ html,body{
 }
 
 .skillbg{
-   background-image:linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)),
-               url("./essentials/wave\ 4.png");
+   background-image:url("./essentials/wave\ 4.png");
   background-size: cover;
 }
 
@@ -300,17 +299,34 @@ html,body{
    .about-main{
     width: 100%;
     padding: 1rem;
-   }
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    }
+
+    .about-main p {
+      width: 85vw;
+      align-self: last baseline;
+    }
 
    .about-service{
     width: 100%;
+     display: flex;
+    flex-direction: column;
+   }
+
+   .about-section p{
+      width: 85vw;
+      align-self: last baseline;
    }
 
   .about-main span{
     display: inline;
   }
 
+
 /* animation for mobile-view */
+
   /* .about-main {
   animation: changeleftMobile 0.4s ease-in forwards;
   animation-timeline: view();
