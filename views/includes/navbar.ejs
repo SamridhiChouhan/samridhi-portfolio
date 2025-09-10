@@ -1,0 +1,54 @@
+<body>
+  <div class="navbar  lg-px-3 md-px-3 d-flex justify-content-around">
+      <div class="navbar-brand "><a href="/">SAMRIDHI</a></div>
+
+      
+        <ul  class="links md-me-3">
+           <li><a href="/about">ABOUT</a></li>
+           <li><a href="/work">WORK</a></li>
+           <li><a href="/skills">SKILLS</a></li>
+           <li class="nav-contact"><a  href="/contact">CONTACTS</a></li>
+        </ul>
+      
+      <div class="toggle-icon" ><i class="fa-solid fa-bars"></i></div>
+    </div>
+</body>
+
+<script>
+  // let body = document.querySelector("body")
+   let links = document.querySelectorAll(".links a")
+   let toggleBtn = document.querySelector(".toggle-icon i");
+   let crossBtn = document.querySelector(".cross-icon");
+   let navbar = document.querySelector(".navbar")
+   let name = document.querySelector(".navbar-brand");
+
+   toggleBtn.addEventListener("click",()=>{
+      if(!navbar.classList.contains("toggle")){
+        navbar.classList.add("toggle")
+        name.style.opacity = "0.5";
+      }else{
+        navbar.classList.remove("toggle")
+        name.style.opacity = "1";
+        toggleBtn.style.opacity = "1";
+      }
+   })
+
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 10) {
+        navbar.classList.add('scrolled');
+        // links.style.color = "grey"
+        for(link of links){
+          link.style.color = "white";
+          link.style.fontWeight = "500";
+        }
+      } else {
+        navbar.classList.remove('scrolled');
+         for(link of links){
+          link.style.fontWeight = "normal";
+          link.style.color = "#ccc";
+         }
+      }
+      // console.log("scrolled")
+    });
+
+</script>

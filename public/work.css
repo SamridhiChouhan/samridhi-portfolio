@@ -1,0 +1,148 @@
+.work-section{
+    margin-top: 3rem;
+    padding: 0 20vw;
+    max-width: 100%;
+    max-width: fit-content;
+}
+
+.work-section h1{
+    margin: 5rem 0rem 2rem 0rem ;
+    font-size: xx-large;
+    /* font-weight: 600; */
+    color: #0d6efd;
+}
+
+.project{
+     /* Glass effect */
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+    position: relative;
+    display: flex;
+    overflow-x: auto;
+    scrollbar-width: none;      /* Firefox */
+   -ms-overflow-style: none; 
+   box-shadow: 4px 0px #dbd7d7ca  ;
+   transform: scale(0.8);
+   
+   /* padding: 2rem; */
+}
+
+.project-panel{
+     margin-bottom: 2.5rem;
+}
+
+.card{
+    margin: 1rem !important;
+    flex-shrink: 0;
+    /* scale: 0.8; */
+    transition: all 0.2s ease-in;
+    backdrop-filter: blur(8px); /* Adjust intensity */
+}
+
+.card:hover{
+   scale: 1.1;
+   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+
+  /* filter: blur(2px); */
+}
+
+.project::-webkit-scrollbar {
+  display: none;              /* Chrome, Safari */
+}
+
+.project::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 40px;  /* adjust size of blur */
+  /* height: 100%; */
+  pointer-events: none; /* don’t block scroll */
+  background: linear-gradient(to left, white, transparent);
+}
+
+.project-head{
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.p-head{
+    /* height: 10%; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
+
+.p-head button{
+    /* height: ; */
+    padding: 0.2rem 0.6rem;
+    border-radius: 1rem;
+    border: none;
+    color:  #1f1f1f; 
+    background-color: #ccc;
+    font-size: small;
+    font-weight: bold;
+}
+
+.p-head button:hover{
+    color : white;
+    background-color: #ccccccc0;
+}
+
+.cardWrap{
+    display: flex;
+    flex-wrap: wrap;
+}
+/* 
+@keyframes changeright{
+  from{
+    transform: translateX(80%) 
+  }
+  to{
+    transform: translateX(0%);
+  }
+}
+
+.project-panel {
+  animation: changeright 1s ease-in forwards;
+  animation-timeline: view();
+  animation-range: entry 5% ;
+} */
+
+.work-section{
+  animation: appear 0.4s ease-in-out forwards ;
+  animation-timeline: view();
+  animation-range: entry 0% exit 10%;
+} 
+
+@media (max-width: 850px){
+  .work-section{
+    padding: 0 10vw;
+    margin-top: 0;
+  }
+
+  .project{
+    padding: 0 !important;
+  }
+}
+
+@media (max-width: 480px){
+  .work-section{
+    /* padding: 0 5vw; */
+  }
+  .project{
+    /* transform: scale(0.5); */
+    width: 100%;
+    padding: 0;
+    /* flex-direction: column; */
+  }
+  .card{
+    transform: scale(0.7);
+    /* height: 10rem; */
+    margin: 0;
+    /* padding: 0; */
+  }
+  .project-panel{
+    margin-bottom: 4rem;
+  }
+}

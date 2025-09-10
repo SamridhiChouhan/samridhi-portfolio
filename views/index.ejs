@@ -1,0 +1,29 @@
+<% layout("./layouts/boilerplate") %>
+
+<div class="hero-section">
+     <div class="hero-img">
+            <a href="/work"><div class="play-btn"><i class="fa-solid fa-play"></i></div></a>
+     </div>
+     <div class="hero-head">
+            <h1>TURN THE VISION</h1>
+            <h1>INTO REALITY</h1>
+            <a  href="/work" class="btn btn-primary m-3">SEE WORK</a>
+     </div>
+</div>
+
+ <%- include("includes/about.ejs") %>
+ 
+<div class="skillbg">
+      <%- include("includes/work.ejs") %>
+      
+      <%- include("includes/skills.ejs") %> 
+</div>    
+
+      <%- include("includes/contact.ejs") %>
+
+<!--       
+<script>
+  window.addEventListener("load", () => {
+    document.querySelector(".hero-img").classList.add("animate");
+  });
+</script> -->

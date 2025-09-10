@@ -1,0 +1,344 @@
+*{
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    border: none;
+    padding: 0;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    box-sizing: border-box;
+}
+
+
+
+
+html,body{
+  margin: 0;
+  overflow-x: hidden;/* hides extra scroll*/
+  height: 100%;
+  width: 100%;
+  background: radial-gradient(circle at center, #0a0a2a 0%, #000010 100%);
+  /* background-color: pink; */
+}
+
+.content{
+    padding: 0 ;
+    margin: 0 !important;
+    max-width: 100vw;
+    /* min-height : 100vh;  */
+    /* color: #fff; */
+    color: #F2F4F8;
+    padding-top: 12vh;
+}
+.hero-section{
+  padding: 0 20vw;
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+}
+
+.hero-img{
+  height: 25rem;
+  width: 100%;
+  /* background-color: pink; */
+  background-image:linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+                   url("./essentials/landing-page.png");
+  background-size: cover;
+  opacity: 1;
+  margin: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.play-btn{
+  background-color: #F2F4F8;;
+  height: 5rem;
+  width: 5rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fa-play{
+  color: #0a0a2a;
+  font-size: 2rem;
+}
+
+.hero-head{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 1rem 0 !important;
+}
+
+.hero-head h1{
+  font-size: 3.2rem;
+  font-weight: bold;
+}
+
+.btn-primary{
+  border-radius: 3rem;
+  font-size: small;
+  font-weight: 600;
+}
+
+.about-section{
+  padding: 0 20vw;
+  display: flex;
+  margin-top: 3rem;
+}
+
+
+.about-main{
+  width: 50%;
+  padding: 1.5rem;
+  scale: 0.9;
+}
+
+.about-main h1{
+  font-weight: 600;
+}
+
+.about-main span{
+  display: block;
+}
+
+
+.about-service{
+  width: 50%;
+  padding: 1rem;
+  padding-left: 6rem;
+  scale: 0.9;
+}
+
+.about-service h1{
+  margin-bottom: 2.5rem;
+  font-size: xx-large;
+  color: #0d6efd;
+}
+
+.about-service h2{
+  font-size: x-large;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  transition: all 0.05s ease-in 0.05s;
+}
+.about-service h2:hover{
+  transform: scale(1.1);
+  color: #ccc;
+}
+
+.about-service p{
+  font-size: medium;
+  margin-bottom: 2rem;
+}
+
+.skillbg{
+  background-image: url("./essentials/wave\ 3.png");
+  background-size: cover;
+}
+
+/* animation */
+
+@keyframes appear{
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
+
+@keyframes shape{
+  from{
+    transform: scale(1);
+  }
+  to{
+    transform: scale(5);
+  }
+}
+
+@keyframes visible{
+  from{
+    visibility: hidden;
+  }
+  to {
+    visibility: visible;
+  }
+}
+
+@keyframes disappear{
+  from{
+    opacity: 1;
+  }
+  to{
+    opacity: 0;
+  }
+}
+
+@keyframes changeleft{
+  from{
+    transform: translateX(-80%) 
+  }
+  to{
+    transform: translateX(0%);
+  }
+}
+
+@keyframes changeright{
+  from{
+    transform: translateX(80%) 
+  }
+  to{
+    transform: translateX(0%);
+  }
+}
+
+@keyframes changeleftMobile{
+  from{
+    transform: translateX(-160%);
+  }
+  to{
+    transform: translateX(0%);
+  }
+}
+
+@keyframes changerightMobile{
+  from{
+    transform: translateX(160%);
+  }
+  to{
+    transform: translateX(0%);
+  }
+}
+
+.about-main {
+  animation: changeleft 0.2s ease-in forwards;
+  animation-timeline: view();
+  animation-range: entry 5% ;
+}
+
+.about-service {
+  animation: changeright 0.2s ease-in forwards;
+  animation-timeline: view();
+  animation-range: entry 5% ;
+}
+
+
+.hero-img {
+  animation: disappear 1s linear forwards;
+  animation: shape 1s linear forwards;
+  animation-timeline: scroll();
+  animation-iteration-count: 1;
+}
+
+.hero-head h1 , .hero-head a{
+  animation: disappear 0.1s ease-in forwards;
+  animation-timeline: view(40% auto);
+}
+  /* scroll-timeline-name: nav-scroll;*/
+
+ 
+/* .skillbg{
+  animation: appear 1s ease-in-out forwards ;
+  animation-timeline: view();
+  /* animation-delay: 1s; */
+  /* animation-range: entry 0% exit 10%; */
+
+/* mediaQueries */
+
+@media (max-width: 850px){
+  .hero-section{
+    padding: 0 10vw;
+  }
+
+  .hero-img{
+    scale: 0.9;
+    /* width: 5; */
+    margin-top: 0;
+    height: 20rem;
+  }
+
+  .hero-head{
+    scale: 0.9;
+  }
+
+  /* about section */
+  
+  .about-section{
+    padding: 0 10vw;
+    margin-top: 0;
+    /* flex-direction: column;  */
+  }
+
+  .about-service{
+    padding-left: 1rem;
+    /* width: 100%; */
+  }
+}
+
+@media (max-width: 540px) {
+    .hero-head{
+      text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+  
+   .hero-section{
+    padding: 0 5vw;
+   }
+
+   .hero-img{
+    height: 12rem;
+    margin-bottom: 0;
+   }
+
+   .hero-head{
+    scale: 0.7;
+   }
+
+   .hero-head a{
+    transform: scale(1.3);
+   }
+
+   /* about section */
+
+   .about-section{
+    flex-direction: column;
+   }
+
+   .about-main{
+    width: 100%;
+    padding: 1rem;
+   }
+
+   .about-service{
+    width: 100%;
+   }
+
+  .about-main span{
+    display: inline;
+  }
+
+/* animation for mobile-view */
+  .about-main {
+  animation: changeleftMobile 0.4s ease-in forwards;
+  animation-timeline: view();
+  animation-range: entry 5% ;
+  }
+  .about-service {
+  animation: changerightMobile 0.4s ease-in forwards;
+  animation-timeline: view();
+  animation-range: entry 5% ;
+  }
+  .hero-head h1 , .hero-head a{
+  animation: disappear 0.1s ease-in forwards;
+  animation-timeline: view(15% auto);
+  }
+  
+}

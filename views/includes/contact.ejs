@@ -1,0 +1,63 @@
+<% layout("./layouts/boilerplate") %>
+
+<div class="contact-section">
+
+    <div class="contact-page">
+
+         <div class="contact-main" style="font-weight: 600;">
+            
+            <h6 >CONTACT INFO</h6>
+
+            <div class="contacts">
+                <div class="contact-info">
+                    <div class="contact-icon"><i class="fa-regular fa-envelope"></i></div>
+                    <div class="info">
+                        <p class="info-key"   >MAIL US</p>
+                        <p class="info-value" >SAMRIDHI.0101010 <br> @GMAIL.COM</p>
+                    </div>
+                </div>
+                <div class="contact-info">
+                    <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
+                    <div class="info">
+                        <p class="info-key">CONTACT US</p>
+                        <p class="info-value" style="font-size: x-large;">8949436619</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="social-links">
+                <h6>SOCIAL INFO</h6>
+                <div class="socials">
+                    <div class="social-icon"><a href="https://www.linkedin.com/in/samridhi-chouhan-437663381/"><i class="fa-brands fa-linkedin"></i></a></div>
+                    <div class="social-icon"><a href="https://dev.to/samridhi_010"><i class="fa-solid fa-link"></i></a></div>
+                    <div class="social-icon"><a href="https://github.com/SamridhiChouhan"><i class="fa-brands fa-github"></i></a></div>
+                </div>
+            </div>
+
+        </div>
+
+
+         <div class="contact-form" >
+                <h1 >Let's work <span style="color:  #0d6efd; font-style: italic">together</span></h1>
+
+            <form action="/" id="contact-form">
+
+                <input type="text" name="name" id="name" placeholder="Name *" required> <br>
+                <input type="text"name="email" id="email" placeholder="Email *" required> <br>
+                <input type="text" name="subject" id="subject" placeholder="Your Subject *" required> <br>
+                <textarea name="message" id="message" placeholder="Your Message *" rows="4" required></textarea> <br>
+                <button type="submit" onsubmit="sendMail()">Send Message</button>
+            </form>
+            <!-- <p id="status"></p> -->
+         </div>
+    </div>
+    
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script>
+  (function() {
+    emailjs.init("pEROYLRfO8_vn8YuV"); // Replace with your Public Key
+  })();
+</script>
+<script src="./contact.js"></script>

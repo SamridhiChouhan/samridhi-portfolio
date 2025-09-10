@@ -1,0 +1,204 @@
+.contact-section{
+    margin: 0 !important;
+    /* height: min-content; */
+}
+
+.contact-page{
+    display: flex;
+    align-items: center;
+    background-image: url("./essentials/wave\ 2.png");
+    background-size: cover;
+    padding: 0 20vw !important;
+    height: 45rem;
+}
+
+.contacts{
+    margin-top: 2rem !important;
+}
+
+.contact-main{
+    width: 30%;
+    scale: 0.9;
+}
+
+.contact-info{
+    display: flex;
+    margin: 1rem 0rem;
+    margin-bottom: 5rem;
+}
+
+.contact-icon{
+    background: rgba(255, 255, 255, 0.1); /* transparent white */
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px); /* Adjust intensity */
+    height: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 0.8rem !important;
+    border-radius: 0.8rem;
+}
+
+.contact-icon i {
+    font-size: 2.5rem;
+    padding: 0.8rem;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.info-key{
+    font-size: smaller;
+}
+
+.info-value{
+    font-size: larger;
+}
+
+.socials{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.social-icon{
+    /* background-color: #17174e; */
+     background: rgba(255, 255, 255, 0.1); /* transparent white */
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+    padding: 1.3rem;
+    border-radius: 50%;
+}
+
+.social-icon i {
+    font-size: x-large ;
+    color: white;
+}
+
+.contact-form{
+    
+     background: rgba(255, 255, 255, 0.1); /* transparent white */
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+
+    width: 70%;
+    margin-left: 1.5rem !important;
+    border-radius: 2rem;
+    padding: 1.5rem 3rem ;
+    height: 35rem;
+     backdrop-filter: blur(8px);
+      /* Adjust intensity */
+  /* background-color: rgba(0, 0, 0, 0.3); Optional dark overlay */
+    /* font-weight: bold; */
+    scale: 0.9;
+}
+
+
+.contact-form h1{
+    padding-top: 0;
+    margin-top: 0.5rem;
+    margin-bottom: 1.5rem;
+    font-weight: 500;
+}
+
+.contact-form form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.contact-form button , input{
+    border-radius: 0.4rem;
+    padding: 0.8rem;
+    background: linear-gradient(to right ,rgb(138, 138, 184) 0% , rgb(185, 178, 223) 100%);
+    font-weight: 700;
+    /* color: #F2F4F8; */
+    color: rgb(61, 59, 59);
+}
+
+.contact-form textarea{
+    padding: 0.8rem;
+    border-radius: 0.4rem;
+    font-weight: 700;
+    color: rgb(61, 59, 59);
+    background: linear-gradient(to right ,rgb(138, 138, 184) 0% , rgb(185, 178, 223) 100%);
+}
+
+.contact-form button {
+    background:rgb(221, 217, 245) ;
+    font-weight: bold;
+    /* color: ; */
+    color: rgb(61, 59, 59);
+}
+
+.contact-form input::placeholder{
+    color: rgb(55, 54, 54)
+}
+
+.contact-form textarea::placeholder{
+    color: rgb(55, 54, 54);
+}
+
+/* .contact-main{
+  animation: changeleft 0.2s ease-in forwards;
+  animation-timeline: view();
+  animation-range: entry 5% ;
+} */
+
+.contact-form{
+  animation: appear 1s ease-in forwards;
+  animation-timeline: view(92% 95%);
+  /* animation-range: entry 5% ; */
+  /* scale: 0.9; */
+}
+
+@media (max-width: 850px){
+    .contact-page{
+        padding:  0  !important;
+        /* flex-direction: column; */
+        scale: 0.8;
+        height: 80%;
+    }
+    
+}
+
+@media (max-width: 480px) {
+    .contact-section{
+        margin-bottom: 0 !important;
+        padding-top: 0;
+        height: 48rem;
+    }
+    .contact-page{
+        position: relative;
+        bottom: 5rem;
+        flex-direction: column;
+        align-items: end;
+    }
+
+    .contact-main{
+        width: 100%;
+        scale: 0.8;
+    }
+    .contact-form{
+        width: 100%;
+        /* height: 5; */
+        height: 33rem;
+        padding: 1rem;
+        transform: scaleY(0.9);
+    }
+
+    .contact-form h1{
+        margin: 1rem;
+    }
+
+    .contact-info{
+        margin-bottom: 3rem;
+    }
+
+    
+}
