@@ -217,7 +217,7 @@
     }
 
     .skill-desc span, p {
-        scale: 0.8;
+        scale: 0.6;
     }
 
     .skill-img{
@@ -230,11 +230,13 @@
 
     .other-img{
         transform: scale(0.8);
+    }    
+}
+
+@media (max-width: 420px){
+    .skill-desc span , p {
+        /* scale: 0.6; */
     }
-    
-
-
-    
 }
 
 .skill-section h2{

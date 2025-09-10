@@ -133,7 +133,8 @@ html,body{
 }
 
 .skillbg{
-  background-image: url("./essentials/wave\ 3.png");
+   background-image:linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)),
+               url("./essentials/wave\ 4.png");
   background-size: cover;
 }
 
@@ -330,4 +331,7 @@ html,body{
   animation-timeline: view(15% auto);
   }
   
+  .skillbg{
+    /* background-image: none; */
+  }
 }
