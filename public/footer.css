@@ -1,5 +1,4 @@
 .footer{
-    /* margin-top: 3rem !important; */
     margin: 0 20vw !important;
     padding-top: 10rem ;
     border-top : 0.1rem solid #ccccccd6;
@@ -16,7 +15,6 @@
 }
 
 .footer-main h1{
-    /* font: 3rem bolder; */
     font-size: xx-large;
     font-weight: 600;
 }
@@ -51,7 +49,6 @@
 }
 
 .end-icon{
-   /* color: #ccc; */
    border: 2px solid #ccc;
    border-radius: 50%;
    height: 3rem;
@@ -69,10 +66,7 @@
 }
 
 .end-icon:hover{
-    /* color : #fff; */
     border-color: #fff;
-    /* border: 3px solid white; */
-    /* scale: 2; */
 } 
 
 @media (max-width: 850px){

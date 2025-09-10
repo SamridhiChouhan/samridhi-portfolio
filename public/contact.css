@@ -1,6 +1,5 @@
 .contact-section{
     margin: 0 !important;
-    /* height: min-content; */
 }
 
 .contact-page{
@@ -67,7 +66,6 @@
 }
 
 .social-icon{
-    /* background-color: #17174e; */
      background: rgba(255, 255, 255, 0.1); /* transparent white */
     border: 1px solid rgba(255, 255, 255, 0.2);
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
@@ -92,9 +90,6 @@
     padding: 1.5rem 3rem ;
     height: 35rem;
      backdrop-filter: blur(8px);
-      /* Adjust intensity */
-  /* background-color: rgba(0, 0, 0, 0.3); Optional dark overlay */
-    /* font-weight: bold; */
     scale: 0.9;
 }
 
@@ -117,7 +112,6 @@
     padding: 0.8rem;
     background: linear-gradient(to right ,rgb(138, 138, 184) 0% , rgb(185, 178, 223) 100%);
     font-weight: 700;
-    /* color: #F2F4F8; */
     color: rgb(61, 59, 59);
 }
 
@@ -132,7 +126,6 @@
 .contact-form button {
     background:rgb(221, 217, 245) ;
     font-weight: bold;
-    /* color: ; */
     color: rgb(61, 59, 59);
 }
 
@@ -144,23 +137,16 @@
     color: rgb(55, 54, 54);
 }
 
-/* .contact-main{
-  animation: changeleft 0.2s ease-in forwards;
-  animation-timeline: view();
-  animation-range: entry 5% ;
-} */
+
 
 .contact-form{
   animation: appear 1s ease-in forwards;
   animation-timeline: view(92% 95%);
-  /* animation-range: entry 5% ; */
-  /* scale: 0.9; */
 }
 
 @media (max-width: 850px){
     .contact-page{
         padding:  0  !important;
-        /* flex-direction: column; */
         scale: 0.8;
         height: 80%;
     }
@@ -186,7 +172,6 @@
     }
     .contact-form{
         width: 100%;
-        /* height: 5; */
         height: 33rem;
         padding: 1rem;
         transform: scaleY(0.9);

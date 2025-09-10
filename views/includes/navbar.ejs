@@ -15,7 +15,6 @@
 </body>
 
 <script>
-  // let body = document.querySelector("body")
    let links = document.querySelectorAll(".links a")
    let toggleBtn = document.querySelector(".toggle-icon i");
    let crossBtn = document.querySelector(".cross-icon");
@@ -36,7 +35,6 @@
     window.addEventListener('scroll', () => {
       if (window.scrollY > 10) {
         navbar.classList.add('scrolled');
-        // links.style.color = "grey"
         for(link of links){
           link.style.color = "white";
           link.style.fontWeight = "500";
@@ -48,7 +46,6 @@
           link.style.color = "#ccc";
          }
       }
-      // console.log("scrolled")
     });
 
 </script>

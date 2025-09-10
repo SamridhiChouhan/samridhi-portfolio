@@ -25,14 +25,4 @@ form.addEventListener("submit", function (e) {
     );
 });
 
-// function sendMail (){
-//     let params = {
-//       name: document.getElementById("name"),
-//       email : document.getElementById("email"),
-//       subject : document.getElementById("subject"),
-//       message : document.getElementById("message")
-//     }
-
-//     emailjs.sendForm(" service_dkbwqga", "template_2x4zrhg" ,params).then(alert("Email sent"))
-// }
 

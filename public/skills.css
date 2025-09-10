@@ -2,7 +2,6 @@
     padding: 0 20vw;
     margin-top: 6rem ;
     margin-bottom: 10rem;
-    /* padding: 7%; */
     text-align: center;
 }
 
@@ -55,18 +54,14 @@
 
 .logo-express{
     background-image: url("./essentials/expressLogo.png");
-    /* scale: 0.7; */
 }
 
 .logo-node{
     background-image: url("./essentials/nodejs.png");
-    /* background-size: contain; */
-    /* scale: 0.3; */
 }
 
 .logo-html{
     background-image: url("./essentials/htmlLogo.png");
-    /* scale: 1.5; */
 }
 
 .logo-css{
@@ -87,24 +82,12 @@
 
 .logo-tailwind{
     background-image: url("./essentials/tailwindlogo.png");
-    /* scale: 3; */
 }
 
 .logo-bootstrap{
     background-image: url("./essentials/bootstraplogo.jpg");
-    /* transform: scale(0.7); */
 }
 
-/* .progress{
-    height: 0.7rem;
-    width: 70%;
-    background-color: white;
-}
-
-.progress-bar{
-    background-color: pink;
-    width: 70%;
-} */
 
 .skills{
    height: 20rem;
@@ -118,13 +101,8 @@
 .skill-cards{
     height: 100%;
     width: 65%;
-    /* background-color: pink; */
-    /* margin: 1%; */
-    /* margin: 1% !important; */
     display: flex;
     flex-direction: column;
-    /* align-content: space-between; */
-    /* justify-content: space-between; */
 
 }
 
@@ -139,29 +117,21 @@
     font-size: x-large;
     font-weight: 700;
     border-radius: 0.6rem;
-    /* margin: 1% !important; */
-    /* text-align: center; */
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    /* padding: 5rem 2rem; */
 }
 
 .skill-desc span{
-    /* display: block; */
     font-size: 3rem;
     font-weight: 900;
 }
 .skill-logo{
-    /* padding: 1%; */
     height: 49.5%;
-    /* background-color: grey; */
     display: flex;
-    /* flex-wrap: wrap; */
     justify-content: space-evenly;
     background-size: cover;
-    /* width: 25%; */
 }
 
 .skill-img{
@@ -175,13 +145,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    /* z-index: 1; */
 }
 
 .logo{
     height: 4rem;
     width: 4rem;
-    /* scale: 0.5; */
     background-size: cover;
 }
 
@@ -199,7 +167,6 @@
 
 .other-bar{
     height: 70%;
-    /* background-color: beige; */
     display: flex;
     justify-content: space-evenly;
     align-items: end;
@@ -208,10 +175,6 @@
 .other-img{
     height: 6rem;
     width: 6rem;
-    /* background-color:black; */
-    /* border-radius: 50%; */
-    /* display: flex; */
-    /* align-items: end; */
 }
 
 .other-logo{
@@ -237,10 +200,6 @@
 @media (max-width: 480px){
     .skill-section{
         padding: 0 ;
-            /* display: flex; */
-    /* flex-direction: column; */
-    /* justify-content: space-evenly; */
-    /* height: 70vh; */
     margin-bottom: 4rem;
     }
 
@@ -255,7 +214,6 @@
     }
     .skill-desc{
         width: 28%;
-        /* scale: 0.8; */
     }
 
     .skill-desc span, p {
