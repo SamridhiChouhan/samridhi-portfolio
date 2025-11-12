@@ -1,93 +1,94 @@
-.footer{
-    margin: 0 20vw !important;
-    padding-top: 10rem ;
-    border-top : 0.1rem solid #ccccccd6;
-    padding-bottom: 10rem;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: #F2F4F8;;
+.footer {
+  margin: 0 20vw !important;
+  padding-top: 10rem;
+  border-top: 0.1rem solid #ccccccd6;
+  padding-bottom: 10rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #f2f4f8;
 }
 
 .footer-main {
-    margin-bottom: 5rem;
+  margin-bottom: 5rem;
 }
 
-.footer-main h1{
-    font-size: xx-large;
-    font-weight: 600;
+.footer-main h1 {
+  font-size: xx-large;
+  font-weight: 600;
 }
 
-.footer-main h2{
-    font-size: large;
-    font-weight: 700;
+.footer-main h2 {
+  font-size: large;
+  font-weight: 700;
 }
 
 .footer p {
-    font-size: small;
+  font-size: small;
 }
 
-.end{
-    width: 30%;
-    color: #ccc;
+.end {
+  width: 30%;
+  color: #ccc;
 }
 
-.fa-copyright{
-    font-size: larger
+.fa-copyright {
+  font-size: larger;
 }
 
 .end-links {
-   display: flex;
-   justify-content: space-around;
-
+  display: flex;
+  justify-content: space-around;
 }
 
-.end-icon i{
-    color: #ccc;
-    
+.end-icon i {
+  color: #ccc;
 }
 
-.end-icon{
-   border: 2px solid #ccc;
-   border-radius: 50%;
-   height: 3rem;
-   width: 3rem;
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   margin-bottom: 1rem;
-   gap: 1rem;
+.end-icon {
+  border: 2px solid #ccc;
+  border-radius: 50%;
+  height: 3rem;
+  width: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+  gap: 1rem;
 }
 
 .end-links a :hover {
-    color : #fff;
-    font-size: large;
+  color: #fff;
+  font-size: large;
 }
 
-.end-icon:hover{
-    border-color: #fff;
-} 
-
-@media (max-width: 850px){
-    .footer{
-        margin: 0 10vw !important;
-        scale: 0.9;
-    }
-    .end{
-        width: 40%;
-    }
+.end-icon:hover {
+  border-color: #fff;
 }
 
-@media (max-width: 480px){
-    .footer{
-        margin: 0 5vw !important;
-        scale: 0.8;
-    }
-    .end{
-        width: 55%;
-    }
-    .end-icon{
-        scale: 0.85;
-    }
+@media (max-width: 850px) {
+  .footer {
+    margin: 0 10vw !important;
+    scale: 0.9;
+  }
+  .end {
+    width: 40%;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer {
+    margin: 0 2vw !important;
+    scale: 1;
+  }
+  .footer-main {
+    scale: 0.8;
+  }
+  .end {
+    width: 60%;
+  }
+  .end-icon {
+    scale: 0.9;
+  }
 }
